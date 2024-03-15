@@ -63,4 +63,4 @@ In this project there weren't any areas of mastery.
 
 ### Overall Learning Experience
 
-- Using different codes to test the project to to ensure that validation works correctly under the condition I want was a bit overwhelming. I got to learn that debugging is also part of the learning process. I should actually give "Testing and Debugging" more practice.
+- Using different codes to test the project to ensure that validation works correctly under the condition I want was a bit overwhelming. I got to learn that debugging is also part of the learning process. I should actually give "Testing and Debugging" more practice.
