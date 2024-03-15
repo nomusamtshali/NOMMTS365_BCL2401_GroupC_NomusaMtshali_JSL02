@@ -24,14 +24,20 @@ document
 
 const addNewGoal = () => {
   const goalInput = document.querySelector("#goalInput").value;
-  const goalList = document.querySelector("#goalList");
+  const goalItems = document.querySelectorAll("#goalList li");
 
-  const textList = goalList.innerText;
-  const splitText = textList.split("\n");
-  if (splitText.includes(goalInput)) {
+  // Retrieving existing goals....
+  const existingGoals = [];
+  goalItems.forEach((item) => {
+    existingGoals.push(item.textContent.trim());
+  });
+
+  // Checking if the input value matches any of the existing goals
+  if (existingGoals.includes(goalInput)) {
     alert("Goal already exists!");
     return;
   }
+  // Proceed with adding new goal...
 
   // ⚠️ Hint 1: Check for duplicates
   // Use 'goalList' to get all existing goals and check if 'goalInput' matches any of them.
